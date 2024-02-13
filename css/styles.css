@@ -508,21 +508,20 @@ margin-bottom: 16px;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.ovarlay-close:hover ,
+.ovarlay-close:focus {
+    background-color: #404BBF;
+    border: none;
+}
+
 .ovarlay-close-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ovarlay-close-icon:hover ,
-.ovarlay-close-icon:active {
-    overflow-clip-margin: content-box;
-    overflow: hidden;
+
+.ovarlay-close:hover .ovarlay-close-icon,
+.ovarlay-close:focus .ovarlay-close-icon {
+    fill: #fff
 }
-
-.ovarlay-close:hover ,
-.ovarlay-close:active {
-    background-color: #404BBF;
-}
-
-
 .modal-title {
     color: var(--NAVY-BLUE, #2E2F42);
     text-align: center;
@@ -627,6 +626,9 @@ fill: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border 250ms cubic-bezier(0.4, 0, 0.2, 1),
       fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal-checkbox {
+    margin-bottom: 24px;
   }
   .modal-checkbox:checked + .check-lbl-privacy .privacy-icon {
     background-color: #404bbf;
