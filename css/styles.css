@@ -727,6 +727,9 @@ letter-spacing: 0.48px;
     border: none;
     fill: #f4f4fd;
   }
+  .modal-checkbox:focus + .check-lbl-privacy .privacy-icon {
+    border: 1px solid #4d5ae5;
+  }
 
 
 
